@@ -50,7 +50,11 @@ Sorted_df = Groupedby_df.sort_values(by = 'revenue', ascending = False)
 Top4_df = Sorted_df.ix[0:4,:]
 
 #There are multiple ways we can visualize the results, bar charts, scatter plot, scatter plot of the Revenue/Cost ratio
-#I've tried the scatter plot of Cost v/s Revenue below 
+
+#The main reason behind visulaizing our data would be to provide us more information about our data and getting data-driven 
+#insights to increase profits. So, therefore, Revenue/Cost ratio can give us the most successful source.
+
+#For this question, I've tried the scatter plot of Cost v/s Revenue below 
 
 plt.figure(figsize = (10,8))
 for i,txt in enumerate(Top4_df.index):
